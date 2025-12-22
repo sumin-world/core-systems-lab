@@ -1,3 +1,24 @@
-vector_app
+# Build outputs
+a.out
 *.o
+*.obj
+*.exe
+
+# Build directories
+build/
+cmake-build-*/
+out/
+
+# IDE / editor
+.vscode/
+.idea/
+
+# OS files
 .DS_Store
+Thumbs.db
+
+# Local test files (optional)
+input.txt
+output.txt
+*.in
+*.out
