@@ -1,24 +1,96 @@
-# Build outputs
-a.out
+# C/C++ build artifacts
 *.o
 *.obj
+*.lo
+*.la
+*.a
+*.so
+*.dylib
+*.dll
 *.exe
+*.elf
+a.out
+*.out
 
 # Build directories
 build/
-cmake-build-*/
+bin/
 out/
+obj/
+Debug/
+Release/
 
-# IDE / editor
+# Project-specific compiled binaries
+# network basics examples
+network/basics/tcp_client
+network/basics/*_client
+network/basics/*_server
+
+# Legacy or simple names used in repo root
+server
+client
+server_select
+client_select
+udp_server
+udp_client
+
+# Shell compiled outputs
+shell/*
+!shell/*.c
+!shell/*.h
+!shell/*.md
+
+# Logs & packet captures
+*.log
+*.pcap
+*.pcapng
+*.cap
+capture*.pcap
+
+# Debug / profiling / coverage
+core
+core.*
+vgcore.*
+perf.data*
+gmon.out
+callgrind.out.*
+massif.out.*
+*.dSYM/
+*.gcno
+*.gcda
+*.gcov
+coverage/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+dist/
+
+# Editor & IDE files
+*.swp
 .vscode/
+!.vscode/tasks.json
+!.vscode/launch.json
+compile_commands.json
+.ipch/
+.cache/
 .idea/
-
-# OS files
 .DS_Store
+
+# Rust target directory (optional experiments)
+target/
+
+# Signal demo binaries
+signal_demo
+signal-demo/signal_demo
+
+# Generic OS files
 Thumbs.db
 
-# Local test files (optional)
-input.txt
-output.txt
-*.in
-*.out
+# Optional: environment files
+.env
+.env.local
