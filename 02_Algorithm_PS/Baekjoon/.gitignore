@@ -1,0 +1,6 @@
+# In this folder, track only source
+*
+!*/
+!*.cpp
+!*.md
+!.gitignore
