@@ -94,3 +94,4 @@ Thumbs.db
 # Optional: environment files
 .env
 .env.local
+cachegrind.out.*
