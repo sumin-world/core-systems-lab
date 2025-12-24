@@ -95,3 +95,32 @@ Thumbs.db
 .env
 .env.local
 cachegrind.out.*
+
+# ---- Prevent committing compiled binaries anywhere ----
+# common output names
+a.out
+main
+test
+server
+client
+
+# generic compiled artifacts
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.elf
+
+# profiling / tooling outputs
+cachegrind.out.*
+callgrind.out.*
+massif.out.*
+vgcore.*
+perf.data*
+
+# macOS / editor
+*.dSYM/
+.DS_Store
